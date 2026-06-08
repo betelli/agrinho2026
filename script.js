@@ -1,5 +1,7 @@
 const revealElements = document.querySelectorAll('.reveal');
 const chartTabs = document.querySelectorAll('.chart-tab');
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 const ctx = document.getElementById('mainChart').getContext('2d');
 
 const chartData = {
@@ -54,9 +56,7 @@ const mainChart = new Chart(ctx, {
       legend: {
         labels: {
           color: '#1c3325',
-          font: {
-            weight: '600',
-          },
+          font: { weight: '600' },
         },
       },
       tooltip: {
@@ -69,20 +69,12 @@ const mainChart = new Chart(ctx, {
     },
     scales: {
       x: {
-        ticks: {
-          color: '#52605a',
-        },
-        grid: {
-          color: 'rgba(216, 228, 210, 0.8)',
-        },
+        ticks: { color: '#52605a' },
+        grid: { color: 'rgba(216, 228, 210, 0.8)' },
       },
       y: {
-        ticks: {
-          color: '#52605a',
-        },
-        grid: {
-          color: 'rgba(216, 228, 210, 0.8)',
-        },
+        ticks: { color: '#52605a' },
+        grid: { color: 'rgba(216, 228, 210, 0.8)' },
       },
     },
   },
@@ -113,3 +105,9 @@ function handleReveal() {
 
 window.addEventListener('scroll', handleReveal);
 window.addEventListener('load', handleReveal);
+
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+}
