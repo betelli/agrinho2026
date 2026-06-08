@@ -3,56 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agro Forte - Práticas agrícolas inovadoras para um futuro sustentável. Transforme sua produção com tecnologia e regeneração do solo." />
   <title>Agro Forte | Práticas Agrícolas Inovadoras</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌾</text></svg>" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <span class="logo">Agro Forte</span>
+        <span class="logo">🌾 Agro Forte</span>
         <p>Inovação agrícola com equilíbrio entre produção e consumo</p>
       </div>
 
       <nav class="nav-links" aria-label="Menu principal">
-        <a href="#hero">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#praticas">Práticas</a>
-        <a href="#graficos">Gráficos</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contato">Contato</a>
+        <a href="#hero" class="nav-link">Início</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#praticas" class="nav-link">Práticas</a>
+        <a href="#impacto" class="nav-link">Impacto</a>
+        <a href="#graficos" class="nav-link">Gráficos</a>
+        <a href="#depoimentos" class="nav-link">Depoimentos</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contato" class="btn btn-nav">Contato</a>
       </nav>
 
-      <button class="menu-toggle" aria-label="Abrir menu">≡</button>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
     </div>
   </header>
 
   <main>
     <section id="hero" class="section section-hero">
+      <div class="hero-background"></div>
       <div class="container hero-grid reveal">
         <div class="hero-copy">
-          <span class="eyebrow">Agro Forte</span>
-          <h1>Práticas agrícolas inovadoras para um futuro sustentável e equilibrado</h1>
-          <p>Produtividade mais forte, consumo mais consciente e recursos mais bem utilizados. Use a tecnologia, a regeneração do solo e a economia circular para transformar cada safra.</p>
+          <span class="eyebrow">Bem-vindo ao Agro Forte</span>
+          <h1>Transforme sua produção com práticas agrícolas inovadoras e sustentáveis</h1>
+          <p>Maximize produtividade, minimize custos e impacto ambiental. Nossos sistemas integram tecnologia, regeneração do solo e economia circular para revolucionar cada safra do seu campo.</p>
           <div class="hero-actions">
-            <a href="#praticas" class="btn btn-primary">Ver práticas</a>
-            <a href="#graficos" class="btn btn-secondary">Ver gráficos</a>
+            <a href="#praticas" class="btn btn-primary btn-large">🚀 Explorar práticas</a>
+            <a href="#impacto" class="btn btn-secondary btn-large">📊 Ver impacto</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number counter" data-target="45">0</span>%
+              <p>Aumento de produtividade</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number counter" data-target="30">0</span>%
+              <p>Economia de água</p>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number counter" data-target="5000">0</span>+
+              <p>Agricultores beneficiados</p>
+            </div>
           </div>
         </div>
 
         <aside class="hero-card">
           <div class="hero-metrics">
-            <article class="metric-card">
+            <article class="metric-card metric-card-1">
+              <div class="metric-icon">🌱</div>
               <span class="metric-value">+45%</span>
               <p>Produtividade com menos insumos</p>
             </article>
-            <article class="metric-card">
+            <article class="metric-card metric-card-2">
+              <div class="metric-icon">💧</div>
               <span class="metric-value">30%</span>
               <p>Economia de água em irrigação</p>
             </article>
-            <article class="metric-card">
+            <article class="metric-card metric-card-3">
+              <div class="metric-icon">♻️</div>
               <span class="metric-value">88%</span>
               <p>Adoção de práticas regenerativas</p>
             </article>
